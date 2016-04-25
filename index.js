@@ -19,7 +19,7 @@ module.exports = function (isp) {
   var left   = 8;
 
   while (left--) {
-    result += '' + randomNatural(0, 9);
+    result += '' + randomNatural({ min: 0, max: 9, inspected: true });
   }
 
   result = isp + result;
